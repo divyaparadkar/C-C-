@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)https://notes.io/qcZ5q -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Notes  - #include </title>
+<meta name="description" content=" - #include #include #include class Account { char name[20]; int accno; char atype; public: void getAccountDetail...">
+<meta name="keywords" content="notes,note,online note,notes app,notes io,online note service,past note,short note,note shortener">
+<meta name="viewport" content="width=device-width, initial-scale=0.7">
+<link rel="canonical" href="https://notes.io/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@notesio">
+<meta name="twitter:creator" content="notes.io">
+<meta name="twitter:title" content="Online note taking app - notes.io">
+<meta name="twitter:description" content=" - #include #include #include class Account { char name[20]; int accno; char atype; public: void getAccountDetail...">
+<meta name="twitter:image" content="https://notes.io/theme/images/twitterCard.png">
+<meta property="og:site_name" content="https://notes.io">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Online Notes Services ">
+<meta property="og:url" content="https://notes.io/qcZ5q">
+<meta property="og:image" content="https://notes.io/theme/images/appLogo.png">
+<meta property="og:description" content=" - #include #include #include class Account { char name[20]; int accno; char atype; public: void getAccountDetail...">
+<meta name="”robots”" content="index, follow">
+<meta name="googlebot" content="All, Index, Follow">
+<link rel="image_src" type="image/jpeg" href="./Bank management  system._files/logo.png">
+<meta name="format-detection" content="telephone=no">
+<meta name="skype_toolbar" content="skype_toolbar_parser_compatible">
+<link rel="alternate" href="https://notes.io/" hreflang="x-default">
+<link rel="alternate" href="https://notes.io/" hreflang="en-us">
+<link rel="icon" href="https://notes.io/favicon.ico" type="image/x-icon">
+<link href="./Bank management  system._files/notes.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" async="" src="./Bank management  system._files/ga.js.download"></script><script async="async" src="./Bank management  system._files/f.txt"></script>
+<script async="" src="./Bank management  system._files/mcm.js.download"></script>
+</head>
+<body>
+<div class="mainDiv">
+<h1 class="whatIsNotesIO" style=""><span>Online note taking app - Notes.io</span><img src="./Bank management  system._files/whatisnotesio.png" alt="notes" height="20" width="123"></h1><div class="increaserev mcm970x250"></div> <script>
+            ir_ads_push();
+        </script>
+<div class="programArea" style="width: 100%;">
+<table width="100%" class="grayBar">
+<tbody><tr>
+<td class="barsol"></td>
+<td class="barback">
+<a href="https://notes.io/">
+<img src="./Bank management  system._files/logo.png" class="logo" alt="notes logo" height="45" width="190">
+</a>
+<div class="slogan" style="">
+<img src="./Bank management  system._files/fastEasyShort.png" alt="Fast | Easy | Short" height="20">
+<h2>
+Online Note Services - notes.io
+</h2>
+</div>
+<div class="menu">
+<a href="https://notes.io/64YV" class="random">Popular notes</a>
+<input id="btnShare" type="button" class="share" value="qcZ5q"><a href="https://notes.io/qcZ5q#" class="comingsoon"></a><input id="btnAccount" type="button" class="account" value="Account">
+<input id="" type="button" class="myNotesDisable" value="Account"></div>
+</td>
+<td class="barsag"></td>
+</tr>
+</tbody></table>
+<div class="notesArea">
+<div id="notesTextAreaID" class="notesTextArea" style="min-height: 557.375px;">
+<center>
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-4070502493653474"><iframe id="aswift_0" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;" src="./Bank management  system._files/saved_resource.html"><iframe id="google_ads_frame0" src="./Bank management  system._files/saved_resource(1).html"></iframe></iframe></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></center>#include&lt;iostream.h&gt;<br>
+#include&lt;conio.h&gt;<br>
+#include&lt;stdio.h&gt;<br>
+class Account<br>
+{<br>
+char name[20];<br>
+int accno;<br>
+char atype;<br>
+public:<br>
+void getAccountDetails()<br>
+{<br>
+cout&lt;&lt;"Enter namen";<br>
+gets(name);<br>
+cout&lt;&lt;"Enter Account Numbern";<br>
+cin&gt;&gt;accno;<br>
+cout&lt;&lt;"Enter Account Typen";<br>
+cin&gt;&gt;atype;<br>
+}<br>
+void displayDetails()<br>
+{<br>
+cout&lt;&lt;"Name : "&lt;&lt;name&lt;&lt;endl;<br>
+cout&lt;&lt;"Account Number	: "&lt;&lt;accno&lt;&lt;endl;<br>
+cout&lt;&lt;"Account Type	: "&lt;&lt;atype&lt;&lt;endl<br>
+;<br>
+}<br>
+};<br>
+class Current_Account:public Account<br>
+{<br>
+int c_balance;<br>
+public:<br>
+Current_Account(){c_balance=1000;}<br>
+void c_display()<br>
+{<br>
+cout&lt;&lt;"Available Balance:"&lt;&lt;c_balance&lt;&lt;endl;<br>
+}<br>
+void c_deposit()<br>
+{<br>
+int cb;<br>
+cout&lt;&lt;"Enter the amount to be deposited"&lt;&lt;endl;<br>
+cin&gt;&gt;cb;<br>
+c_balance+=cb;<br>
+}<br>
+void c_withdraw()<br>
+{<br>
+int cw;<br>
+cout&lt;&lt;"Enter the amount to be withdrawal"&lt;&lt;endl;<br>
+cin&gt;&gt;cw;<br>
+if(c_balance&gt;1000)<br>
+c_balance-=cw;<br>
+else	<br>
+cout&lt;&lt;"Insufficient Balance"&lt;&lt;endl;<br>
+}<br>
+};<br>
+class Saving_Account:public Account<br>
+{<br>
+int s_balance;<br>
+public:<br>
+Saving_Account(){s_balance=500;}<br>
+void s_display()<br>
+{<br>
+cout&lt;&lt;"Available Balance:"&lt;&lt;s_balance&lt;&lt;endl;<br>
+}<br>
+void s_deposit()<br>
+{<br>
+int sb;<br>
+cout&lt;&lt;"Enter the amount to be deposited"&lt;&lt;endl;<br>
+cin&gt;&gt;sb;<br>
+s_balance+=sb;<br>
+<br>
+}<br>
+void s_withdraw()<br>
+{<br>
+int sw;<br>
+cout&lt;&lt;"Enter the amount to be withdrawal"&lt;&lt;endl;<br>
+cin&gt;&gt;sw;<br>
+if(s_balance&gt;500)<br>
+s_balance-=sw;<br>
+else	<br>
+cout&lt;&lt;"Insufficient Balance"&lt;&lt;endl;<br>
+}<br>
+};<br>
+void main()<br>
+{<br>
+Current_Account c;<br>
+Saving_Account s;<br>
+char atype;int choice;<br>
+cout&lt;&lt;"Choose the type of AccountnS or s for Saving Accountn";<br>
+cout&lt;&lt;"C or c for Current Accountn";<br>
+cin&gt;&gt;atype;<br>
+if(atype=='s'||atype=='S')<br>
+{<br>
+s.getAccountDetails();<br>
+s.displayDetails();<br>
+while(1)<br>
+{<br>
+cout&lt;&lt;"1.Check Balancen2.Depositn3.Withdrawn4.Exitn";<br>
+cin&gt;&gt;choice;<br>
+switch(choice)<br>
+{<br>
+case 1: s.s_display();break;<br>
+case 2: s.s_deposit();break;<br>
+case 3: s.s_withdraw();break;<br>
+case 4: goto out;<br>
+default: cout&lt;&lt;"Invlid Choice...Try Again";<br>
+}<br>
+}<br>
+}<br>
+else if(atype=='c'||atype=='C')<br>
+{<br>
+c.getAccountDetails();<br>
+c.displayDetails();<br>
+while(1)<br>
+{<br>
+cout&lt;&lt;"1.Check Balancen2.Depositn3.Withdrawn4.Exitn";<br>
+cin&gt;&gt;choice;<br>
+switch(choice)<br>
+{<br>
+case 1: c.c_display();break;<br>
+case 2: c.c_deposit();break;<br>
+case 3: c.c_withdraw();break;<br>
+case 4: goto out;<br>
+default: cout&lt;&lt;"Invlid Choice...Try Again";<br>
+}<br>
+}<br>
+}<br>
+else<br>
+{<br>
+cout&lt;&lt;"Invalid Type of Account...Visit Again!!!";<br>
+}<br>
+out:<br>
+cout&lt;&lt;"nThank you for Banking with us.......";<br>
+}<center>
+<ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-4070502493653474" data-ad-slot="3868234696"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></center> </div>
+</div>
+<table width="100%">
+<tbody><tr>
+<td class="notespagebottom1">&nbsp;</td>
+<td class="notespagebottom2">&nbsp;</td>
+<td class="notespagebottom3">&nbsp;</td>
+</tr>
+</tbody></table>
+</div>
+<div class="adverArea" style="width: 4%;">
+<div class="close"></div>
+<table class="width100">
+<tbody><tr>
+<td class="barsol">&nbsp;</td>
+<td class="barback">
+<div class="myNotesArea"> <img src="./Bank management  system._files/whatisnotesio.png" alt="what is notes.io" class="adverWhatsNotes"></div></td>
+<td class="barsag">&nbsp;</td>
+</tr>
+</tbody></table>
+<div class="notesArea">
+<div class="notesTextArea">
+<div class="scrollArea" style="min-height: 557.375px;">
+<p style="padding-bottom: 10px;"> Notes.io is a web-based application for taking notes. You can take your notes and share with others people. If you like taking long notes, notes.io is designed for you. To date, over 8,000,000,000 notes created and continuing... </p>
+<div style="padding-bottom: 10px;">
+<p> With notes.io; </p>
+<ul style="padding-left: 10px;">
+<li> * You can take a note from anywhere and any device with internet connection.</li>
+<li> * You can share the notes in social platforms (YouTube, Facebook, Twitter, instagram etc.).</li>
+<li> * You can quickly share your contents without website, blog and e-mail.</li>
+<li> * You don't need to create any Account to share a note. As you wish you can use quick, easy and best shortened notes with sms, websites, e-mail, or messaging services (WhatsApp, iMessage, Telegram, Signal).</li>
+<li> * Notes.io has fabulous infrastructure design for a short link and allows you to share the note as an easy and understandable link.</li>
+</ul>
+</div>
+<p style="padding-bottom: 10px;"> <b style="font-weight: bolder;">Fast:</b> Notes.io is built for speed and performance. You can take a notes quickly and browse your archive. </p>
+<p style="padding-bottom: 10px;"> <b style="font-weight: bolder;">Easy:</b> Notes.io doesn’t require installation. Just write and share note! </p>
+<p style="padding-bottom: 10px;"> <b style="font-weight: bolder;">Short:</b> Notes.io’s url just 8 character. You’ll get shorten link of your note when you want to share. (Ex: <a href="https://notes.io/q" style="font-size: 15px"> notes.io/q </a>) </p>
+<p style="padding-bottom: 10px;"> <b style="font-weight: bolder;">Free:</b> Notes.io works for 12 years and has been free since the day it was started. </p>
+<br>
+<p> You immediately create your first note and start sharing with the ones you wish. If you want to contact us, you can use the following communication channels;</p>
+<br>
+<p><b>Email: hello@notes.io</b></p>
+<p><b>Twitter: http://twitter.com/notesio</b></p>
+<p><b>Instagram: http://instagram.com/notes.io</b></p>
+<p><b>Facebook: http://facebook.com/notesio</b></p>
+<br> <br>
+<p>
+Regards;<br>
+Notes.io Team
+</p>
+</div>
+</div>
+</div>
+<table class="width100">
+<tbody><tr>
+<td class="notespagebottom1">&nbsp;</td>
+<td class="notespagebottom2">&nbsp;</td>
+<td class="notespagebottom3">&nbsp;</td>
+</tr>
+</tbody></table>
+</div> </div>
+<div id="messageback" class="messageback" style="width: 1519px; height: 686px; opacity: 0.5;"></div>
+<div class="messageBOXback" style="top: 218px; left: 549.5px;"></div>
+<div id="msgBOXshort" class="message" style="top: 218px; left: 549.5px;">
+<table class="width100">
+<tbody><tr>
+<td class="auto-style1">&nbsp;</td>
+<td class="auto-style2">
+ <div class="closeBTNpopup" id="shortClose"></div>
+<h6 id="shortNoteH1">Shortened Note Link</h6>
+</td>
+<td class="auto-style3">&nbsp;</td>
+</tr>
+<tr>
+<td class="auto-style4">&nbsp;</td>
+<td class="auto-style9">
+<div id="sonuc">
+<span><img src="./Bank management  system._files/ajax-loader.gif" class="looding" alt="Looding Image"></span>
+</div>
+</td>
+<td class="auto-style5">&nbsp;</td>
+</tr>
+<tr>
+<td class="auto-style6">&nbsp;</td>
+<td class="auto-style7">&nbsp;</td>
+<td class="auto-style8">&nbsp;</td>
+</tr>
+</tbody></table>
+</div><div id="messageBOX" class="message" style="top: 218px; left: 549.5px;">
+<table class="width100">
+<tbody><tr>
+<td class="auto-style1">&nbsp;</td>
+<td class="auto-style2">
+<div class="closeBTNpopup" id="shortClose"></div>
+<h6>Long File</h6>
+</td>
+<td class="auto-style3">&nbsp;</td>
+</tr>
+<tr>
+<td class="auto-style4">&nbsp;</td>
+<td class="auto-style9">
+<p>For written notes was greater than 18KB Unable to shorten.</p>
+<p>To be smaller than 18KB, please organize your notes, or sign in.</p>
+</td>
+<td class="auto-style5">&nbsp;</td>
+</tr>
+<tr>
+<td class="auto-style6">&nbsp;</td>
+<td class="auto-style7">&nbsp;</td>
+<td class="auto-style8">&nbsp;</td>
+</tr>
+</tbody></table>
+</div><div class="footer">
+<h3>Notes</h3>
+<p><a href="https://notes.io/vS8E">I'm Feeling Lucky</a></p>
+<p style="margin:10px;">If you like notes.io, please support us via <a href="https://notes.io/a" title="Notes.io Donation Page"> Cryptocurrency(Ether,Doge,Monero) </a> </p>
+
+
+<p>
+<a href="http://directmessage.xyz/" target="_blank">
+<picture>
+<source srcset="/theme/banners/directMessageBanner.webp, /theme/banners/directMessageBanner@2x.webp 2x" type="image/webp">
+<source srcset="/theme/banners/directMessageBanner.webp, /theme/banners/directMessageBanner.webp 1x" type="image/webp">
+<img src="./Bank management  system._files/directMessageBanner.jpg" alt="Direct Message for Whatsapp" width="970" height="250" class="directMessageBanner">
+</picture>
+</a>
+</p>
+<p>
+<a href="https://quickreplies.app/" target="_blank"> Paste Keyboard iOS - Quick Replies </a></p>
+<p style="text-align: right;width: 98%">v 2.7.1</p>
+<div class="socialArea">
+<p>We'd love to hear from you. Please email us at <a href="mailto:hello@notes.io">hello@notes.io</a></p>
+<p>
+Copyright 2022
+<a href="http://www.metromedya.com/en" target="_blank" title="ios uygulama geliştirme şirketi">Metromedya</a>
+</p>
+</div>
+<div style="padding: 20px;font-size: 11px">
+<a href="http://www.metromedya.com/tr/hizmetlerimiz/ios-uygulama-gelistirme.html" target="_blank" title="ios uygulama programlama">ios uygulama geliştirme </a>
+</div>
+
+<script src="./Bank management  system._files/jquery.min.js.download"></script>
+<script src="./Bank management  system._files/notes.min.js.download"></script>
+<script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-18039671-1']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</div><script defer="" src="./Bank management  system._files/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;771bd3f92dc9a3ec&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;ca8549779d274e4a85c7f21e58b590f4&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+
+</body></html>
